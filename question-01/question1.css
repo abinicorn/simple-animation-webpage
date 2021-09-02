@@ -1,0 +1,49 @@
+#container {
+position:absolute;
+width: 800px;
+height:600px;
+left:50%;
+top: 50%;
+transform: translate(-50%, -50%);
+border:1px solid black;
+}
+
+#background {
+width: 800px;
+height: 600px;
+z-index: 0;
+
+}
+
+#charizard {
+    position:absolute;
+    height:500px;
+    left:210px;
+    top:90px;
+    z-index: 1;
+    filter:drop-shadow(2px 2px 2px red);
+
+}
+
+#breath {
+    position:absolute;
+    width: 100px;
+    top: 100px;
+    left: 360px;
+    transform: rotate(45deg);
+    transform-origin: 90% 50%;
+    transition: transform 1s ease;
+    z-index: 2;
+}
+
+#breath:hover {
+    transform: scale(300%) rotate(45deg);
+}
+
+#tail {
+    position:absolute;
+    width:100px;
+    top:315px;
+    left:634px;
+    z-index: 2;
+}
